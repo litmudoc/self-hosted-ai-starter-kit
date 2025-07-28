@@ -148,9 +148,9 @@ services:
   #   depends_on:
   #     - ollama-gpu
 
-  ollama-pull-llama-gpu-amd:
-    profiles: [gpu-amd]
-    <<: *init-ollama
-    image: ollama/ollama:rocm
-    depends_on:
-     - ollama-gpu-amd
+  # ollama-pull-llama-gpu-amd:
+  #   profiles: [gpu-amd]
+  #   <<: *init-ollama
+  #   image: ollama/ollama:rocm
+  #   depends_on:
+  #    - ollama-gpu-amd
